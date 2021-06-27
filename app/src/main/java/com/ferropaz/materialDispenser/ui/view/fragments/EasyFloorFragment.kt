@@ -10,12 +10,16 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.ferropaz.materialDispenser.databinding.FragmentEasyFloorBinding
 import com.ferropaz.materialDispenser.ui.viewmodel.EasyFloorViewModel
+import android.content.Intent
+import android.net.Uri
+import com.ferropaz.materialDispenser.R
 
 
 class EasyFloorFragment : Fragment() {
 
     private var _binding: FragmentEasyFloorBinding? = null
     private val binding get() = _binding!!
+    private val WEB_PAGE = "https://nojipiz.github.io/"
 
     private val easyFloorViewModel : EasyFloorViewModel by viewModels()
 
@@ -36,6 +40,11 @@ class EasyFloorFragment : Fragment() {
                 calculate()
             }
         })
+
+        binding.nojipizBrand.setOnClickListener {
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(WEB_PAGE))
+            startActivity(browserIntent)
+        }
     }
 
     private fun calculate(){

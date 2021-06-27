@@ -1,6 +1,7 @@
 package com.ferropaz.materialDispenser.data.model
 
 import android.text.Editable
+import kotlin.math.ceil
 
 class FloorManager {
 
@@ -13,7 +14,7 @@ class FloorManager {
         val profiles = squareMeters.times(constants[0])
         val blocks = squareMeters.times(constants[1])
         val mesh = squareMeters.times(constants[2])
-        return arrayListOf(profiles.toInt(), blocks.toInt(), mesh.toInt())
+        return arrayListOf(ceil(profiles).toInt(), ceil(blocks).toInt() , ceil(mesh).toInt() )
     }
 
 }

@@ -9,4 +9,20 @@
     <string name="profiles">Profiles</string>
     <string name="blocks">Blocks</string>
     <string name="mesh">Mesh</string>
+    <string name="logo_ferropaz">Ferropaz Logo</string>
+    <string name="bags">Bags</string>
+    <string name="lineal_meters">Linear Meters</string>
+    <string name="units">Units</string>
+    <string name="mesh_size">Units (2.35m x 6m)</string>
+    <string name="cement">Cement</string>
+    <string name="sand">Sand</string>
+    <string name="water">Water</string>
+    <string name="gravel">Gravel</string>
+    <string name="easy_plate_info">Enter the amount of square meters of your work</string>
+    <string name="brand_text">"All rights reserved Ferropaz SAS Copyright © 2021 "</string>
+    <string name="developed">"Developed with  by "</string>
+    <string name="disclaimer">The values ​​announced here are merely illustrative and for reference, they may vary
+        according to the type, form and state of the project. Ferropaz SAS is not responsible for the misuse,
+        approximation and / or interpretation of this information
+    </string>
 </resources>

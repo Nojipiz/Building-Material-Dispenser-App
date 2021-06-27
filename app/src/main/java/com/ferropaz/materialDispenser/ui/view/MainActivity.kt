@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
         view_pager.adapter = adapter
         tabs.setupWithViewPager(view_pager)
 
-        tabs.getTabAt(0)!!.setIcon(R.drawable.ic_launcher_background)
-        tabs.getTabAt(1)!!.setIcon(R.drawable.ic_launcher_background)
-        tabs.getTabAt(2)!!.setIcon(R.drawable.ic_launcher_background)
+        tabs.getTabAt(0)!!.setIcon(R.drawable.concrete)
+        tabs.getTabAt(1)!!.setIcon(R.drawable.measuring_tape)
+        tabs.getTabAt(2)!!.setIcon(R.drawable.libro)
     }
 }

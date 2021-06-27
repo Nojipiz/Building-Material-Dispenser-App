@@ -1,6 +1,8 @@
 package com.ferropaz.materialDispenser.ui.view.fragments
 
 import android.app.Activity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -20,6 +22,7 @@ class ConcreteFragment : Fragment() {
 
     private var _binding: FragmentConcreteBinding? = null
     private val binding get() = _binding!!
+    private val WEB_PAGE = "https://nojipiz.github.io/"
 
     private val concreteViewModel : ConcreteViewModel by viewModels()
 
@@ -41,16 +44,16 @@ class ConcreteFragment : Fragment() {
     }
 
     private fun setQuantities(list:ArrayList<Double>){
-        binding.cementAmount.text = Utilities.formatter(list[0])
-        binding.sandAmount.text = Utilities.formatter(list[1])
-        binding.gravelAmount.text = Utilities.formatter(list[2])
-        binding.waterAmount.text = Utilities.formatter(list[3])
+        binding.cementAmount.text = Utilities.formatterInteger(list[0])
+        binding.sandAmount.text = Utilities.formatterDecimal(list[1])
+        binding.gravelAmount.text = Utilities.formatterDecimal(list[2])
+        binding.waterAmount.text = Utilities.formatterDecimal(list[3])
     }
 
     private fun setPackageQuantities(list:ArrayList<Double>){
-        binding.cementPackage.text = Utilities.formatter(list[0])
-        binding.sandPackage.text = Utilities.formatter(list[1])
-        binding.gravelPackage.text = Utilities.formatter(list[2])
+        binding.cementPackage.text = Utilities.formatterInteger(list[0])
+        binding.sandPackage.text = Utilities.formatterInteger(list[1])
+        binding.gravelPackage.text = Utilities.formatterInteger(list[2])
     }
 
     private fun componentsInit(){
@@ -74,6 +77,11 @@ class ConcreteFragment : Fragment() {
                 calculate()
             }
         })
+
+        binding.nojipizBrand.setOnClickListener {
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(WEB_PAGE))
+            startActivity(browserIntent)
+        }
     }
 
     fun calculate(){

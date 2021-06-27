@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.view.fragments.ConcreteFragment">
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:focusable="true" android:focusableInTouchMode="true"
+             tools:context=".ui.view.fragments.ConcreteFragment" android:background="#FFFFFF">
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:orientation="vertical" android:gravity="center_horizontal">
+                      android:orientation="vertical" android:gravity="center_horizontal|center_vertical">
             <TextView
                     android:text="@string/easy_plate_info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/infoText"
-                    android:layout_margin="@dimen/activity_horizontal_margin"/>
+                    android:layout_margin="@dimen/activity_horizontal_margin" android:gravity="center"/>
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -25,7 +26,7 @@
                         android:inputType="number|numberDecimal"
                         android:ems="10"
                         android:id="@+id/metersField" android:layout_weight="1" android:textSize="30sp"
-                        android:autofillHints="" android:text="0"/>
+                        android:autofillHints="" android:text="@string/cero"/>
                 <TextView
                         android:text="@string/squared_meters"
                         android:layout_width="wrap_content"
@@ -34,7 +35,7 @@
             </LinearLayout>
             <Spinner
                     android:layout_width="match_parent"
-                    android:layout_height="49dp" android:id="@+id/buildingTypeSpinner" android:layout_weight="1"
+                    android:layout_height="0dp" android:id="@+id/buildingTypeSpinner" android:layout_weight="1"
                     android:layout_margin="@dimen/activity_horizontal_margin"/>
             <Spinner
                     android:layout_width="match_parent"
@@ -48,107 +49,218 @@
             <TableLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent" android:id="@+id/amountsTable"
-                    android:layout_margin="@dimen/activity_horizontal_margin">
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:padding="16dp"
+                    android:background="@drawable/shadow">
 
                 <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="80dp" android:gravity="center_vertical">
+                        android:layout_height="80dp" android:padding="21dp" android:gravity="center">
                     <TextView
                             android:text="@string/voidText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/cementAmount"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" android:gravity="right"/>
                     <TextView
                             android:text="@string/kilograms"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/kilograms"
                             android:textSize="14sp" android:layout_margin="2dp"/>
-                    <ImageView
-                            android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp" android:id="@+id/imageView"
-                            app:srcCompat="@drawable/cement"/>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:text="@string/cement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/cementTitle"
+                                android:gravity="center" android:textStyle="bold"/>
+                        <ImageView
+                                android:src="@drawable/cement"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp" android:id="@+id/imageView"
+                                app:srcCompat="@drawable/cement" android:contentDescription="@string/todo"/>
+                    </LinearLayout>
                     <TextView
                             android:text="@string/amount_symbol"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/amountOne"
                             android:layout_margin="3dp"/>
-                    <TextView
-                            android:text="@string/voidText"
+                    <LinearLayout
+                            android:orientation="vertical"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/cementPackage"/>
+                            android:layout_height="wrap_content" android:gravity="center">
+                        <TextView
+                                android:text="@string/voidText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/cementPackage"
+                                android:textStyle="bold" android:gravity="center"/>
+                        <TextView
+                                android:text="@string/bags"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/amountCement"
+                                android:gravity="center" android:textStyle="bold"/>
+                    </LinearLayout>
                 </TableRow>
-                <TableRow android:layout_width="match_parent" android:layout_height="80dp"
-                          android:gravity="center_vertical">
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:padding="21dp" android:gravity="center">
                     <TextView
                             android:text="@string/voidText"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/sandAmount" android:textSize="14sp"/>
+                            android:layout_height="wrap_content" android:id="@+id/sandAmount" android:textSize="14sp"
+                            android:gravity="right"/>
                     <TextView
                             android:text="@string/cubicMeters"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/cubicMetersS"
                             android:textSize="14sp" android:layout_margin="2dp"/>
-                    <ImageView
-                            android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp" android:id="@+id/imageView6"
-                            app:srcCompat="@drawable/sand"/>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:text="@string/sand"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/sandTitle"
+                                android:gravity="center" android:textStyle="bold"/>
+                        <ImageView
+                                android:src="@drawable/sand"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp" android:id="@+id/imageView6"
+                                app:srcCompat="@drawable/sand" android:contentDescription="@string/todo"/>
+                    </LinearLayout>
                     <TextView
                             android:text="@string/amount_symbol"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/amountTwo"
                             android:layout_margin="3dp"/>
-                    <TextView
-                            android:text="@string/voidText"
+                    <LinearLayout
+                            android:orientation="vertical"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/sandPackage"/>
+                            android:layout_height="wrap_content" android:gravity="center">
+                        <TextView
+                                android:text="@string/voidText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/sandPackage"
+                                android:textStyle="bold" android:gravity="center"/>
+                        <TextView
+                                android:text="@string/bags"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/amountSand"
+                                android:gravity="center" android:textStyle="bold"/>
+                    </LinearLayout>
                 </TableRow>
                 <TableRow android:layout_width="match_parent" android:layout_height="80dp"
-                          android:gravity="center_vertical">
+                          android:padding="21dp" android:gravity="center">
                     <TextView
                             android:text="@string/voidText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/gravelAmount"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" android:gravity="right"/>
                     <TextView
                             android:text="@string/cubicMeters"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/cubicMetersG"
                             android:textSize="14sp" android:layout_margin="2dp"/>
-                    <ImageView
-                            android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp" android:id="@+id/imageView7"
-                            app:srcCompat="@drawable/gravel"/>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:text="@string/gravel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/gravelTitle"
+                                android:gravity="center" android:textStyle="bold"/>
+                        <ImageView
+                                android:src="@drawable/gravel"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp" android:id="@+id/imageView7"
+                                app:srcCompat="@drawable/gravel" android:contentDescription="@string/todo"/>
+                    </LinearLayout>
                     <TextView
                             android:text="@string/amount_symbol"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/amountThree"
                             android:layout_margin="3dp"/>
-                    <TextView
-                            android:text="@string/voidText"
+                    <LinearLayout
+                            android:orientation="vertical"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/gravelPackage"/>
+                            android:layout_height="wrap_content" android:gravity="center">
+                        <TextView
+                                android:text="@string/voidText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/gravelPackage"
+                                android:textStyle="bold" android:gravity="center"/>
+                        <TextView
+                                android:text="@string/bags"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/amountGravel"
+                                android:gravity="center" android:textStyle="bold"/>
+                    </LinearLayout>
                 </TableRow>
                 <TableRow android:layout_width="match_parent" android:layout_height="80dp"
-                          android:gravity="center_vertical">
+                          android:padding="21dp" android:gravity="center">
                     <TextView
                             android:text="@string/voidText"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/waterAmount" android:textSize="14sp"/>
+                            android:layout_height="wrap_content" android:id="@+id/waterAmount" android:textSize="14sp"
+                            android:gravity="right"/>
                     <TextView
                             android:text="@string/liters"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/liters"
                             android:textSize="14sp" android:layout_margin="2dp"/>
-                    <ImageView
-                            android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp" android:id="@+id/imageView4"
-                            app:srcCompat="@drawable/faucet"/>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:text="@string/water"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/waterTitle"
+                                android:gravity="center" android:textStyle="bold"/>
+                        <ImageView
+                                android:src="@drawable/faucet"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp" android:id="@+id/imageView4"
+                                app:srcCompat="@drawable/faucet" android:contentDescription="@string/todo"/>
+                    </LinearLayout>
                 </TableRow>
             </TableLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:background="@color/colorPrimary"
+                    android:gravity="center">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/ferropazBrand"
+                        android:text="@string/brand_text" android:textColor="#FFFFFF"
+                        android:textSize="10sp" android:gravity="center" android:layout_margin="10sp"/>
+                <TextView
+                        android:text="@string/disclaimer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView10" android:textSize="8sp"
+                        android:gravity="center" android:textColor="#FFFFFF" android:textStyle="italic"
+                        android:layout_marginRight="10sp" android:layout_marginLeft="10sp"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_margin="10sp">
+                    <info.androidhive.fontawesome.FontTextView
+                            android:text="@string/developed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView9" android:layout_weight="1"
+                            android:textColor="#FFFFFF" android:textSize="11sp" android:layout_gravity="center"
+                            android:layout_margin="3sp"/>
+                    <TextView
+                            android:text="@string/nojipiz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/nojipizBrand"
+                            android:textColor="#FFFFFF" android:textSize="11sp" android:textStyle="bold"
+                            android:layout_gravity="center" android:clickable="true"/>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

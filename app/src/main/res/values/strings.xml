@@ -1,10 +1,9 @@
 <resources>
-    <string name="app_name">DISPENSADOR DE MATERIAL</string>
+    <string name="app_name">Dispensador de Material</string>
     <string name="tab_text_1">CONCRETO</string>
     <string name="tab_text_3">CATALOGO</string>
     <string name="tab_text_2">PLACA FACIL</string>
-    <string name="hello_blank_fragment" translatable="false">VOID</string>
-    <string name="easy_plate_info" translatable="false">Ingresa la cantidad de metros cuadrados de tu obra</string>
+    <string name="easy_plate_info">Ingresa la cantidad de metros cuadrados de tu obra</string>
     <string name="squared_meters" translatable="false">m²</string>
     <string name="calculate_button_text">Calcular</string>
     <string name="amounts">Cantidades</string>
@@ -21,6 +20,21 @@
 
     <string name="catalog_url" translatable="false">test</string>
     <string name="logo_ferropaz">Logo Ferropaz</string>
+    <string name="bags">Bultos</string>
+    <string name="lineal_meters">Metros Lineales</string>
+    <string name="units">Unidades</string>
+    <string name="mesh_size">Unidades (2.35m x 6m)</string>
+    <string name="cero" translatable="false">0</string>
+    <string name="cement">Cemento</string>
+    <string name="water">Agua</string>
+    <string name="gravel">Grava</string>
+    <string name="sand">Arena</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="brand_text">Todos los derechos reservados Ferropaz SAS Copyright © 2021 </string>
+    <string name="nojipiz" translatable="false">Orlando Vargas</string>
+    <string name="developed">Desarrollado con  por </string>
+    <string name="nojipiz_page" translatable="false">https://nojipiz.github.io/</string>
+    <string name="disclaimer">Los valores aqui anunciados son meramente ilustrativos y de referencia, pueden variar segun el tipo, forma y estado del proyecto. Ferropaz SAS no se hace responsable de la mala utilización, aproximación y/o interpretaciónde esta información</string>
 
 
 </resources>
