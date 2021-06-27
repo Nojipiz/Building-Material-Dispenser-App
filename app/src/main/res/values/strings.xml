@@ -20,6 +20,7 @@
     <string name="mesh"> Malla Electrosoldada</string>
 
     <string name="catalog_url" translatable="false">test</string>
+    <string name="logo_ferropaz">Logo Ferropaz</string>
 
 
 </resources>

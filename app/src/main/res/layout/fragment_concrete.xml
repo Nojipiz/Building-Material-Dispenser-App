@@ -8,7 +8,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:orientation="vertical">
+                      android:orientation="vertical" android:gravity="center_horizontal">
             <TextView
                     android:text="@string/easy_plate_info"
                     android:layout_width="match_parent"
@@ -46,16 +46,13 @@
                     android:layout_height="wrap_content" android:id="@+id/amounts" android:gravity="center"
                     android:textSize="24sp"/>
             <TableLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent" android:id="@+id/amountsTable"
                     android:layout_margin="@dimen/activity_horizontal_margin">
 
                 <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
-                <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" android:gravity="center_vertical">
+                        android:layout_height="80dp" android:gravity="center_vertical">
                     <TextView
                             android:text="@string/voidText"
                             android:layout_width="wrap_content"
@@ -68,8 +65,9 @@
                             android:textSize="14sp" android:layout_margin="2dp"/>
                     <ImageView
                             android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/imageView"/>
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" android:id="@+id/imageView"
+                            app:srcCompat="@drawable/cement"/>
                     <TextView
                             android:text="@string/amount_symbol"
                             android:layout_width="wrap_content"
@@ -80,7 +78,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/cementPackage"/>
                 </TableRow>
-                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                <TableRow android:layout_width="match_parent" android:layout_height="80dp"
                           android:gravity="center_vertical">
                     <TextView
                             android:text="@string/voidText"
@@ -93,8 +91,9 @@
                             android:textSize="14sp" android:layout_margin="2dp"/>
                     <ImageView
                             android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/imageView6"/>
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" android:id="@+id/imageView6"
+                            app:srcCompat="@drawable/sand"/>
                     <TextView
                             android:text="@string/amount_symbol"
                             android:layout_width="wrap_content"
@@ -105,7 +104,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/sandPackage"/>
                 </TableRow>
-                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                <TableRow android:layout_width="match_parent" android:layout_height="80dp"
                           android:gravity="center_vertical">
                     <TextView
                             android:text="@string/voidText"
@@ -119,8 +118,9 @@
                             android:textSize="14sp" android:layout_margin="2dp"/>
                     <ImageView
                             android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/imageView7"/>
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" android:id="@+id/imageView7"
+                            app:srcCompat="@drawable/gravel"/>
                     <TextView
                             android:text="@string/amount_symbol"
                             android:layout_width="wrap_content"
@@ -131,7 +131,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" android:id="@+id/gravelPackage"/>
                 </TableRow>
-                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                <TableRow android:layout_width="match_parent" android:layout_height="80dp"
                           android:gravity="center_vertical">
                     <TextView
                             android:text="@string/voidText"
@@ -144,8 +144,9 @@
                             android:textSize="14sp" android:layout_margin="2dp"/>
                     <ImageView
                             android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/imageView4"/>
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" android:id="@+id/imageView4"
+                            app:srcCompat="@drawable/faucet"/>
                 </TableRow>
             </TableLayout>
         </LinearLayout>

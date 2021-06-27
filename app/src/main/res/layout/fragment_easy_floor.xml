@@ -6,9 +6,9 @@
              tools:context=".ui.view.fragments.ConcreteFragment">
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" android:layout_gravity="center_vertical">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:orientation="vertical">
+                      android:orientation="vertical" android:gravity="center_horizontal">
             <TextView
                     android:text="@string/easy_plate_info"
                     android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content" android:id="@+id/amounts" android:gravity="center"
                     android:textSize="24sp" android:layout_marginTop="20sp"/>
             <TableLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent" android:id="@+id/amountsTable"
                     android:layout_marginTop="30dp" android:layout_marginRight="16sp"
                     android:layout_marginBottom="16sp" android:layout_marginLeft="16sp">
@@ -52,8 +52,9 @@
                             android:layout_height="wrap_content" android:id="@+id/profilesText"/>
                     <ImageView
                             android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/imageView"/>
+                            android:layout_width="80sp"
+                            android:layout_height="80sp" android:id="@+id/imageView"
+                            app:srcCompat="@drawable/profile"/>
                     <TextView
                             android:text="@string/amount_symbol"
                             android:layout_width="wrap_content"
@@ -72,8 +73,8 @@
                             android:layout_height="wrap_content" android:id="@+id/blocksText"/>
                     <ImageView
                             android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/imageView6"/>
+                            android:layout_width="80sp"
+                            android:layout_height="80sp" android:id="@+id/imageView6" app:srcCompat="@drawable/block"/>
                     <TextView
                             android:text="@string/amount_symbol"
                             android:layout_width="wrap_content"
@@ -92,8 +93,8 @@
                             android:layout_height="50dp" android:id="@+id/meshText"/>
                     <ImageView
                             android:src="@drawable/ic_launcher_foreground"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/imageView7"/>
+                            android:layout_width="80sp"
+                            android:layout_height="80sp" android:id="@+id/imageView7" app:srcCompat="@drawable/mesh"/>
                     <TextView
                             android:text="@string/amount_symbol"
                             android:layout_width="wrap_content"
