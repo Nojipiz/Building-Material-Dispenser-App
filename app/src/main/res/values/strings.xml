@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DISPENSADOR DE MATERIAL</string>
+    <string name="tab_text_1">CONCRETO</string>
+    <string name="tab_text_3">CATALOGO</string>
+    <string name="tab_text_2">PLACA FACIL</string>
+    <string name="hello_blank_fragment" translatable="false">VOID</string>
+    <string name="easy_plate_info" translatable="false">Ingresa la cantidad de metros cuadrados de tu obra</string>
+    <string name="squared_meters" translatable="false">m²</string>
+    <string name="calculate_button_text">Calcular</string>
+    <string name="amounts">Cantidades</string>
+    <string name="liters" translatable="false">L</string>
+    <string name="cubicMeters" translatable="false">m³</string>
+    <string name="kilograms" translatable="false">kg</string>
+    <string name="voidText" translatable="false">---------</string>
+    <string name="amount_symbol" translatable="false"> X </string>
+
+
+    <string name="profiles"> Perfiles</string>
+    <string name="blocks"> Bloquelones</string>
+    <string name="mesh"> Malla Electrosoldada</string>
+
+    <string name="catalog_url" translatable="false">test</string>
+
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.view.fragments.ConcreteFragment">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TextView
+                    android:text="@string/easy_plate_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/infoText"
+                    android:layout_margin="@dimen/activity_horizontal_margin"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp" android:layout_marginRight="100dp">
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/metersField" android:layout_weight="1" android:textSize="30sp"
+                        android:autofillHints="" android:text="0"/>
+                <TextView
+                        android:text="@string/squared_meters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/sqrtText" android:layout_weight="0"
+                        android:textSize="30sp"/>
+            </LinearLayout>
+            <TextView
+                    android:text="@string/amounts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/amounts" android:gravity="center"
+                    android:textSize="24sp" android:layout_marginTop="20sp"/>
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/amountsTable"
+                    android:layout_marginTop="30dp" android:layout_marginRight="16sp"
+                    android:layout_marginBottom="16sp" android:layout_marginLeft="16sp">
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:gravity="center_vertical">
+                    <TextView
+                            android:text="@string/profiles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/profilesText"/>
+                    <ImageView
+                            android:src="@drawable/ic_launcher_foreground"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/imageView"/>
+                    <TextView
+                            android:text="@string/amount_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/amountOne"
+                            android:layout_margin="10dp" android:textSize="24sp"/>
+                    <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/profilesAmount"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:gravity="center_vertical">
+                    <TextView
+                            android:text="@string/blocks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/blocksText"/>
+                    <ImageView
+                            android:src="@drawable/ic_launcher_foreground"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/imageView6"/>
+                    <TextView
+                            android:text="@string/amount_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/amountTwo"
+                            android:layout_margin="10dp" android:textSize="24sp"/>
+                    <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/blocksAmount"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:gravity="center_vertical">
+                    <TextView
+                            android:text="@string/mesh"
+                            android:layout_width="99dp"
+                            android:layout_height="50dp" android:id="@+id/meshText"/>
+                    <ImageView
+                            android:src="@drawable/ic_launcher_foreground"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/imageView7"/>
+                    <TextView
+                            android:text="@string/amount_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/amountThree"
+                            android:layout_margin="10dp" android:textSize="24sp"/>
+                    <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/meshAmount"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MATERIAL DISPENSER</string>
+    <string name="tab_text_1">CONCRETE</string>
+    <string name="tab_text_3">CATALOG</string>
+    <string name="tab_text_2">EASY ROOF</string>
+    <string name="calculate_button_text">Calculate</string>
+    <string name="amounts">Amounts</string>
+    <string name="profiles">Profiles</string>
+    <string name="blocks">Blocks</string>
+    <string name="mesh">Mesh</string>
+</resources>

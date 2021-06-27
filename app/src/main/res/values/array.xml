@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="building_types">
+        <item>Placa Facil</item>
+        <item>Placa Maciza</item>
+    </array>
+    <array name="strength_types">
+        <item>1500 psi 10.34 Mpa</item>
+        <item>2000 psi 13.80 Mpa</item>
+        <item>2500 psi 17.23 Mpa</item>
+        <item>3000 psi 20.68 Mpa</item>
+        <item>3500 psi 24.13 Mpa</item>
+    </array>
+</resources>
