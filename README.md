@@ -1,7 +1,8 @@
 # FerropazMaterialDispenser
 Aplicación simple de cálculo de concreto, placas aligeradas y catalogo en línea, proceso de calculo sencillo aproximado.
 
-PlayStore: -------
+## PlayStore: -------
+## Icons source: https://www.flaticon.es/ 
 
 Desarrollada en Kotlin, con SDk API 16 (Mínimo Android 4.1) con librerías estándar.
 Primera App en PlayStore :D
