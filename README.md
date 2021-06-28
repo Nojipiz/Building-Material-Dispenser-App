@@ -5,7 +5,7 @@ Aplicación simple de cálculo de concreto, placas aligeradas y catalogo en lín
 ## Icons source: https://www.flaticon.es/ 
 
 Desarrollada en Kotlin, con SDk API 16 (Mínimo Android 4.1) con librerías estándar, Intellij Idea with android and kotlin develop plugins, edición con GIMP.
-Corre bien en low specs ;)
+Bajo el modelo V - VM - M  (View - viewmodel - model).
 
 Primera App en PlayStore :D
 
