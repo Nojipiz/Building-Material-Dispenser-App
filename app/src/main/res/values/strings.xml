@@ -21,9 +21,9 @@
     <string name="catalog_url" translatable="false">test</string>
     <string name="logo_ferropaz">Logo Ferropaz</string>
     <string name="bags">Bultos</string>
-    <string name="lineal_meters">Metros Lineales</string>
-    <string name="units">Unidades</string>
-    <string name="mesh_size">Unidades (2.35m x 6m)</string>
+    <string name="lineal_meters">ml</string>
+    <string name="units">Unids</string>
+    <string name="mesh_size">Unids</string>
     <string name="cero" translatable="false">0</string>
     <string name="cement">Cemento</string>
     <string name="water">Agua</string>

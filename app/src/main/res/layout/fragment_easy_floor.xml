@@ -75,8 +75,8 @@
                                 android:textSize="18sp" android:textStyle="bold" android:gravity="center"/>
                         <TextView
                                 android:text="@string/lineal_meters"
-                                android:layout_width="61dp"
-                                android:layout_height="36dp" android:id="@+id/linearMeters"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/linearMeters"
                                 android:gravity="center"
                                 android:layout_marginStart="10sp" android:layout_margin="0dp"/>
                     </LinearLayout>
@@ -143,8 +143,8 @@
                                 android:textStyle="bold" android:gravity="center"/>
                         <TextView
                                 android:text="@string/mesh_size"
-                                android:layout_width="71dp"
-                                android:layout_height="64dp" android:id="@+id/meshUnits"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:id="@+id/meshUnits"
                                 android:gravity="center"
                                 android:layout_marginStart="10sp" android:layout_margin="2dp"/>
                     </LinearLayout>

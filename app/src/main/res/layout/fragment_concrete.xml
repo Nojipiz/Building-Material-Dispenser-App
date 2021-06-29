@@ -39,7 +39,7 @@
                     android:layout_margin="@dimen/activity_horizontal_margin"/>
             <Spinner
                     android:layout_width="match_parent"
-                    android:layout_height="43dp" android:id="@+id/strengthSpinner"
+                    android:layout_height="wrap_content" android:id="@+id/strengthSpinner"
                     android:layout_margin="@dimen/activity_horizontal_margin"/>
             <TextView
                     android:text="@string/amounts"
@@ -48,13 +48,13 @@
                     android:textSize="24sp"/>
             <TableLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent" android:id="@+id/amountsTable"
+                    android:layout_height="wrap_content" android:id="@+id/amountsTable"
                     android:layout_margin="@dimen/activity_horizontal_margin"
                     android:padding="16dp"
                     android:background="@drawable/shadow">
 
                 <TableRow
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="80dp" android:padding="21dp" android:gravity="center">
                     <TextView
                             android:text="@string/voidText"
@@ -102,7 +102,7 @@
                                 android:gravity="center" android:textStyle="bold"/>
                     </LinearLayout>
                 </TableRow>
-                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                <TableRow android:layout_width="wrap_content" android:layout_height="match_parent"
                           android:padding="21dp" android:gravity="center">
                     <TextView
                             android:text="@string/voidText"
@@ -150,7 +150,7 @@
                                 android:gravity="center" android:textStyle="bold"/>
                     </LinearLayout>
                 </TableRow>
-                <TableRow android:layout_width="match_parent" android:layout_height="80dp"
+                <TableRow android:layout_width="wrap_content" android:layout_height="80dp"
                           android:padding="21dp" android:gravity="center">
                     <TextView
                             android:text="@string/voidText"
@@ -198,7 +198,7 @@
                                 android:gravity="center" android:textStyle="bold"/>
                     </LinearLayout>
                 </TableRow>
-                <TableRow android:layout_width="match_parent" android:layout_height="80dp"
+                <TableRow android:layout_width="wrap_content" android:layout_height="80dp"
                           android:padding="21dp" android:gravity="center">
                     <TextView
                             android:text="@string/voidText"

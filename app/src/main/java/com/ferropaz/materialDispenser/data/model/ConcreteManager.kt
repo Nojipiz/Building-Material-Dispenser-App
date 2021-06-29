@@ -8,7 +8,8 @@ class ConcreteManager {
 
     var thicknessList = hashMapOf(
         0 to 0.05, //Easy Roof
-        1 to 0.1   //Full Plate
+        1 to 0.1,   //Full Plate
+        2 to 0.1   //Collaborator Plate
     )
     var strengthList = hashMapOf(
         0 to arrayListOf(210.0, 0.50, 1.0, 160.0), //1500psi

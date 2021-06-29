@@ -57,6 +57,7 @@ class ConcreteFragment : Fragment() {
     }
 
     private fun componentsInit(){
+        binding.buildingTypeSpinner.setSelection(2);
         ArrayAdapter.createFromResource(this.requireContext(), R.array.building_types, android.R.layout.simple_spinner_item).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             binding.buildingTypeSpinner.adapter = adapter

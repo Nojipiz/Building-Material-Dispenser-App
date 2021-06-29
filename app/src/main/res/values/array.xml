@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="building_types">
-        <item>Placa Facil</item>
-        <item>Placa Maciza</item>
+        <item>Placa Facil (5cm)</item>
+        <item>Placa Maciza (10cm)</item>
+        <item>Placa Colaborante (10cm)</item>
     </array>
     <array name="strength_types">
         <item>1500 psi 10.34 Mpa</item>
