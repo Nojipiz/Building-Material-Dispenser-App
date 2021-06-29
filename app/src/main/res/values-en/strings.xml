@@ -11,9 +11,9 @@
     <string name="mesh">Mesh</string>
     <string name="logo_ferropaz">Ferropaz Logo</string>
     <string name="bags">Bags</string>
-    <string name="lineal_meters">Linear Meters</string>
+    <string name="lineal_meters">lm</string>
     <string name="units">Units</string>
-    <string name="mesh_size">Units (2.35m x 6m)</string>
+    <string name="mesh_size">"Units "</string>
     <string name="cement">Cement</string>
     <string name="sand">Sand</string>
     <string name="water">Water</string>
