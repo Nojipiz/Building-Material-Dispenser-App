@@ -1,7 +1,7 @@
 # FerropazMaterialDispenser
 Aplicación simple de cálculo de concreto, placas aligeradas y catalogo en línea, proceso de calculo sencillo aproximado.
 
-## PlayStore: -------
+## PlayStore: https://play.google.com/store/apps/details?id=com.ferropaz.materialDispenser
 ## Icons source: https://www.flaticon.es/ 
 
 Desarrollada en Kotlin, con SDk API 16 (Mínimo Android 4.1) con librerías estándar, Intellij Idea with android and kotlin develop plugins, edición con GIMP.
