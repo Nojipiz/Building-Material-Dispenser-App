@@ -83,7 +83,7 @@ class ConcreteFragment : Fragment() {
             startActivity(browserIntent)
         }
 
-        binding.strengthSpinner.setSelection(2);
+        binding.strengthSpinner.setSelection(3);
     }
 
     fun calculate(){

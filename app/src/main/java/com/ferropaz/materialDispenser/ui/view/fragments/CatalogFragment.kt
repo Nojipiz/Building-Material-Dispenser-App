@@ -21,13 +21,14 @@ class CatalogFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentCatalogBinding.inflate(inflater, container, false)
-        val view = binding.root
+        val viewR = binding.root
         componentsInit()
-        return view
+        return viewR
     }
 
     private fun componentsInit(){
         // WebView
         binding.catalogView.loadUrl(BASE_URL)
+        binding.catalogView.webViewClient = WebViewClient();
     }
 }

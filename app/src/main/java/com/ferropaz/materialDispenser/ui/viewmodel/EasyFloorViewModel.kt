@@ -4,6 +4,9 @@ import android.text.Editable
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.ferropaz.materialDispenser.data.model.FloorManager
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class EasyFloorViewModel: ViewModel() {
 
@@ -15,7 +18,10 @@ class EasyFloorViewModel: ViewModel() {
     }
 
     fun calculate(squareMeter: Editable){
-        val list = floorManager.calculate(squareMeter)
-        quantities.value = list
+        CoroutineScope(Dispatchers.Default).launch {
+            val list = floorManager.calculate(squareMeter)
+            quantities.postValue(list)
+        }
     }
+    
 }

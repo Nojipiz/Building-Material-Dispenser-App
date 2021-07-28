@@ -5,6 +5,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.ferropaz.materialDispenser.R
 import com.ferropaz.materialDispenser.data.model.ConcreteManager
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class ConcreteViewModel : ViewModel() {
 
@@ -18,8 +21,10 @@ class ConcreteViewModel : ViewModel() {
     }
 
     fun calculate(squareMeter: Editable, buildingType: Int, strengthType: Int){
-        val list = concreteManager.calculate(squareMeter, buildingType, strengthType)
-        quantities.value = list[0]
-        packageQuantities.value = list[1]
+        CoroutineScope(Dispatchers.Default).launch {
+            val list = concreteManager.calculate(squareMeter, buildingType, strengthType)
+            quantities.postValue(list[0])
+            packageQuantities.postValue(list[1])
+        }
     }
 }

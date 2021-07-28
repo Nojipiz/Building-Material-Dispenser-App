@@ -12,7 +12,8 @@ import com.ferropaz.materialDispenser.databinding.FragmentEasyFloorBinding
 import com.ferropaz.materialDispenser.ui.viewmodel.EasyFloorViewModel
 import android.content.Intent
 import android.net.Uri
-import com.ferropaz.materialDispenser.R
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 
 
 class EasyFloorFragment : Fragment() {
@@ -62,4 +63,12 @@ class EasyFloorFragment : Fragment() {
         binding.blocksAmount.text = list[1].toString()
         binding.meshAmount.text = list[2].toString()
     }
+
+    private fun corrutinesImplementation(){
+        //TODO: Improva cal speed with corroutines
+        lifecycleScope.launch{
+            calculate()
+        }
+    }
+
 }

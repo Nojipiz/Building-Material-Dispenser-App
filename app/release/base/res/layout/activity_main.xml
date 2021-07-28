@@ -1,0 +1,55 @@
+
+ş
+9
+android*http://schemas.android.com/apk/res/android
+2
+app'http://schemas.android.com/apk/res-auto3androidx.coordinatorlayout.widget.CoordinatorLayout"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ*
+
+    .*ë
+â/com.google.android.material.appbar.AppBarLayout"W
+*http://schemas.android.com/apk/res/androidgravitycenter_horizontal"
+(¯„2:8"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"
+(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"
+(ô„2:0ÿÿÿÿÿÿÿÿÿ"ƒ
+*http://schemas.android.com/apk/res/androidtheme@style/AppTheme.AppBarOverlay"
+(€€„2&
+$‰€Àøstyle/AppTheme.AppBarOverlay*
+
+
+        ^*ˆ
+ÿ	ImageView"g
+'http://schemas.android.com/apk/res-auto	srcCompat@drawable/logo"(Ä…ø2
+õ€ ødrawable/logo"€
+*http://schemas.android.com/apk/res/androidcontentDescription@string/logo_ferropaz"(ó„„2
+˜Œ¼østring/logo_ferropaz"_
+*http://schemas.android.com/apk/res/androidid@+id/mainLogo"(Ğ„2
+ï¤øid/mainLogo"Q
+*http://schemas.android.com/apk/res/androidlayout_height57dp"(õ„2:hr"R
+*http://schemas.android.com/apk/res/androidlayout_width290dp"(ô„2:hÄ*	
+        D*É
+À*com.google.android.material.tabs.TabLayout"t
+*http://schemas.android.com/apk/res/android
+background?attr/colorPrimary"(Ô„2
+Ãøattr/colorPrimary"W
+*http://schemas.android.com/apk/res/androidid	@+id/tabs"(Ğ„2
+“ƒ¤øid/tabs"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ*
+    9
+*
+
+    6*ø
+ï#androidx.viewpager.widget.ViewPager"
+'http://schemas.android.com/apk/res-autolayout_behavior&@string/appbar_scrolling_view_behavior"(Çƒø2/
+-€¼ø%string/appbar_scrolling_view_behavior"c
+*http://schemas.android.com/apk/res/androidid@+id/view_pager"(Ğ„2
+Îƒ¤øid/view_pager"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ*
+
+
+J
