@@ -6,8 +6,8 @@ import androidx.fragment.app.FragmentPagerAdapter
 
 class ViewPagerAdapter(suportFragmentManager: FragmentManager) : FragmentPagerAdapter(suportFragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
-    val fragmentList = ArrayList<Fragment>()
-    val fragmentTitleList = ArrayList<String>();
+    private val fragmentList = ArrayList<Fragment>()
+    private val fragmentTitleList = ArrayList<String>();
 
     override fun getCount(): Int {
         return fragmentTitleList.size

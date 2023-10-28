@@ -13,7 +13,12 @@ import com.ferropaz.materialDispenser.ui.viewmodel.EasyFloorViewModel
 import android.content.Intent
 import android.net.Uri
 import androidx.lifecycle.lifecycleScope
+import com.ferropaz.materialDispenser.R
 import kotlinx.coroutines.launch
+import java.time.Year
+import java.time.ZonedDateTime
+import java.util.Calendar
+import java.util.Date
 
 
 class EasyFloorFragment : Fragment() {
@@ -37,15 +42,15 @@ class EasyFloorFragment : Fragment() {
             override fun afterTextChanged(s: Editable?) {}
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
 
-            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                calculate()
-            }
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) = calculate()
         })
 
         binding.nojipizBrand.setOnClickListener {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(WEB_PAGE))
             startActivity(browserIntent)
         }
+        val currentYear = Calendar.getInstance().get(Calendar.YEAR).toString()
+        binding.ferropazBrand.text = getString(R.string.brand_text, currentYear)
     }
 
     private fun calculate(){
@@ -53,9 +58,9 @@ class EasyFloorFragment : Fragment() {
     }
 
     private fun setObservers(){
-        easyFloorViewModel.quantities.observe(viewLifecycleOwner, {
+        easyFloorViewModel.quantities.observe(viewLifecycleOwner) {
             setQuantities(it)
-        })
+        }
     }
 
     private fun setQuantities(list:ArrayList<Int>){

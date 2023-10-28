@@ -19,7 +19,7 @@
     <string name="water">Water</string>
     <string name="gravel">Gravel</string>
     <string name="easy_plate_info">Enter the amount of square meters of your work</string>
-    <string name="brand_text">"All rights reserved Ferropaz SAS Copyright © 2021 "</string>
+    <string name="brand_text">All rights reserved Ferropaz SAS Copyright © %1$s</string>
     <string name="developed">"Developed with  by "</string>
     <string name="disclaimer">The values ​​announced here are merely illustrative and for reference, they may vary
         according to the type, form and state of the project. Ferropaz SAS is not responsible for the misuse,

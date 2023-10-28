@@ -30,7 +30,7 @@
     <string name="gravel">Grava</string>
     <string name="sand">Arena</string>
     <string name="todo" translatable="false">TODO</string>
-    <string name="brand_text">Todos los derechos reservados Ferropaz SAS Copyright © 2021 </string>
+    <string name="brand_text">Todos los derechos reservados Ferropaz SAS Copyright © %1$s</string>
     <string name="nojipiz" translatable="false">Orlando Vargas</string>
     <string name="developed">Desarrollado con  por </string>
     <string name="nojipiz_page" translatable="false">https://nojipiz.github.io/</string>

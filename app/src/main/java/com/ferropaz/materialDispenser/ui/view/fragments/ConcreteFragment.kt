@@ -17,12 +17,16 @@ import androidx.fragment.app.viewModels
 import com.ferropaz.materialDispenser.databinding.FragmentConcreteBinding
 import com.ferropaz.materialDispenser.ui.viewmodel.ConcreteViewModel
 import com.ferropaz.materialDispenser.utilities.Utilities
+import java.util.Calendar
 
 class ConcreteFragment : Fragment() {
 
     private var _binding: FragmentConcreteBinding? = null
     private val binding get() = _binding!!
-    private val WEB_PAGE = "https://nojipiz.github.io/"
+    
+    companion object{
+        private const val WEB_PAGE = "https://nojipiz.github.io/"
+    }
 
     private val concreteViewModel : ConcreteViewModel by viewModels()
 
@@ -35,12 +39,12 @@ class ConcreteFragment : Fragment() {
     }
 
     private fun setObservers(){
-        concreteViewModel.quantities.observe(viewLifecycleOwner, {
+        concreteViewModel.quantities.observe(viewLifecycleOwner) {
             setQuantities(it)
-        })
-        concreteViewModel.packageQuantities.observe(viewLifecycleOwner, {
+        }
+        concreteViewModel.packageQuantities.observe(viewLifecycleOwner) {
             setPackageQuantities(it)
-        })
+        }
     }
 
     private fun setQuantities(list:ArrayList<Double>){
@@ -72,18 +76,17 @@ class ConcreteFragment : Fragment() {
         binding.metersField.addTextChangedListener(object : TextWatcher{
             override fun afterTextChanged(s: Editable) {}
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
-
-            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                calculate()
-            }
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) = calculate()
         })
 
         binding.nojipizBrand.setOnClickListener {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(WEB_PAGE))
             startActivity(browserIntent)
         }
+        binding.strengthSpinner.setSelection(3)
 
-        binding.strengthSpinner.setSelection(3);
+        val currentYear = Calendar.getInstance().get(Calendar.YEAR).toString()
+        binding.ferropazBrand.text = getString(R.string.brand_text, currentYear)
     }
 
     fun calculate(){
