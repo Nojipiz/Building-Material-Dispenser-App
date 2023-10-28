@@ -8,7 +8,6 @@ import com.ferropaz.materialDispenser.ui.view.fragments.CatalogFragment
 import com.ferropaz.materialDispenser.ui.view.fragments.ConcreteFragment
 import com.ferropaz.materialDispenser.ui.view.fragments.EasyFloorFragment
 import com.ferropaz.materialDispenser.ui.view.fragments.adapters.ViewPagerAdapter
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,11 +25,11 @@ class MainActivity : AppCompatActivity() {
         adapter.addFragment(ConcreteFragment(), getString(R.string.tab_text_1))
         adapter.addFragment(EasyFloorFragment(), getString(R.string.tab_text_2))
         adapter.addFragment(CatalogFragment(), getString(R.string.tab_text_3))
-        view_pager.adapter = adapter
-        tabs.setupWithViewPager(view_pager)
+        binding.viewPager.adapter = adapter
+        binding.tabs.setupWithViewPager(binding.viewPager)
 
-        tabs.getTabAt(0)!!.setIcon(R.drawable.concrete)
-        tabs.getTabAt(1)!!.setIcon(R.drawable.measuring_tape)
-        tabs.getTabAt(2)!!.setIcon(R.drawable.libro)
+        binding.tabs.getTabAt(0)!!.setIcon(R.drawable.concrete)
+        binding.tabs.getTabAt(1)!!.setIcon(R.drawable.measuring_tape)
+        binding.tabs.getTabAt(2)!!.setIcon(R.drawable.libro)
     }
 }
