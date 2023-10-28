@@ -47,14 +47,14 @@ class ConcreteFragment : Fragment() {
         }
     }
 
-    private fun setQuantities(list:ArrayList<Double>){
+    private fun setQuantities(list:List<Double>){
         binding.cementAmount.text = Utilities.formatterInteger(list[0])
         binding.sandAmount.text = Utilities.formatterDecimal(list[1])
         binding.gravelAmount.text = Utilities.formatterDecimal(list[2])
         binding.waterAmount.text = Utilities.formatterDecimal(list[3])
     }
 
-    private fun setPackageQuantities(list:ArrayList<Double>){
+    private fun setPackageQuantities(list:List<Double>){
         binding.cementPackage.text = Utilities.formatterInteger(list[0])
         binding.sandPackage.text = Utilities.formatterInteger(list[1])
         binding.gravelPackage.text = Utilities.formatterInteger(list[2])

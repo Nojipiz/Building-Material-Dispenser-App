@@ -5,7 +5,7 @@ import kotlin.math.ceil
 
 class FloorManager {
 
-    val constants = arrayListOf(1.0, 5.0, 0.071428)
+    private val constants = arrayListOf(1.0, 5.0, 0.071428)
 
     fun calculate(squareMeter: Editable):ArrayList<Int>{
         var squareMeters=0.0
@@ -16,5 +16,4 @@ class FloorManager {
         val mesh = squareMeters.times(constants[2])
         return arrayListOf(ceil(profiles).toInt(), ceil(blocks).toInt() , ceil(mesh).toInt() )
     }
-
 }

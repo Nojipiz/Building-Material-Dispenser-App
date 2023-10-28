@@ -11,9 +11,10 @@ import kotlinx.coroutines.launch
 
 class ConcreteViewModel : ViewModel() {
 
-    val quantities = MutableLiveData<ArrayList<Double>>()
-    val packageQuantities = MutableLiveData<ArrayList<Double>>()
-    val concreteManager = ConcreteManager()
+    val quantities = MutableLiveData<List<Double>>()
+    val packageQuantities = MutableLiveData<List<Double>>()
+
+    private val concreteManager = lazy { ConcreteManager() }
 
     init {
         quantities.value = arrayListOf(0.0,0.0,0.0,0.0)
@@ -22,7 +23,7 @@ class ConcreteViewModel : ViewModel() {
 
     fun calculate(squareMeter: Editable, buildingType: Int, strengthType: Int){
         CoroutineScope(Dispatchers.Default).launch {
-            val list = concreteManager.calculate(squareMeter, buildingType, strengthType)
+            val list = concreteManager.value.calculate(squareMeter, buildingType, strengthType)
             quantities.postValue(list[0])
             packageQuantities.postValue(list[1])
         }
